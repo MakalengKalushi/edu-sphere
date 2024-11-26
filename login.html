@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-styles.css">
+    <title>Login | Student Hub</title>
+    <script type="module" src="login-script.js" defer> </script>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id = "login-form">
+            <div class="input-group">
+                <label for="Email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Log In</button>
+            <div class="link">
+                <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+            </div>
+            <p>Checking login status <div id="status">...</div></p>
+            <p id="error-message" style="color: red;"> </p>
+            
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    background-color: #2C3E50; 
+    color: #FFFFFF;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .content {
+    padding: 20px;
+    background-color: #F4F4F4;
+    flex: 1;
+  }
+
+  #logout-button{
+    padding:10px;
+    border-radius: 5px;
+    background-color: #FF0000;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    font-weight:900;
+    margin-top:20px;
+    text-align:center;
+  }
+  
+  .content h2 {
+    color: #34495E;
+    margin-bottom: 15px;
+  }
+  
+  #courseList li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .dashboard {
+      flex-direction: row;
+    }
+    .sidebar {
+      width: 20%;
+      min-height: 100vh;
+      position: fixed;
+    }
+    .content {
+      width: 80%;
+      margin-left: 20%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar ul li {
+      text-align: center;
+    }
+    .content section {
+      padding: 15px;
+      margin-top: 10px;
+    }
+  }
+  

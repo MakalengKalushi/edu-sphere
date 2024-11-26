@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Classes</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Student Hub</div>
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <nav id="mobile-nav" class="hidden">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="study-material.html">Study Materials</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="classes">
+        <h2>Our Classes</h2>
+        <p>Explore tailored Math and Science lessons for every grade level.</p>
+
+        <div class="class-category">
+            <h3>Grade 8-9 Math</h3>
+            <p>Covering foundational math concepts such as algebra, geometry, and more.</p>
+            <button class="cta-button" onclick="toggleTopics(this)">Expand</button>
+            <div class="topics hidden">
+                <ul>
+                    <li>Algebra <br>
+                        <iframe src="https://www.youtube.com/embed/094y1Z2wpJg?si=7Ge0ufia_yDmx5th" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </li>
+                    <li>Geometry <br>
+                        <iframe src="https://www.youtube.com/embed/302eJ3TzJQU?si=qmeBwIhOnjNI4mPN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </li>
+                    <li>Statistics <br>
+                        <iframe src="https://www.youtube.com/embed/example3" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <script>
+          
+        </script>
+
+        <div class="class-category">
+            <h3>Grade 10-12 Math</h3>
+            <p>Advanced math topics including calculus, statistics, and applied math.</p>
+            <button class="cta-button"  onclick="toggleTopics(this)">Expand</button>
+            <div class="topics hidden">
+                <ul>
+                    <li>Algebra <br>
+                        <iframe src="https://www.youtube.com/embed/H58vbez_m4E?si=15PE0svYOMQaorak" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                    <li>Geometry <br>
+                        <iframe src="https://www.youtube.com/embed/example2" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                    <li>Statistics <br>
+                        <iframe src="https://www.youtube.com/embed/example3" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="class-category">
+            <h3>Grade 8-9 Science</h3>
+            <p>Explore physics, chemistry, and biology fundamentals for junior grades.</p>
+            <button class="cta-button"  onclick="toggleTopics(this)">Expand</button>
+            <div class="topics hidden">
+                <ul>
+                    <li>Algebra <br>
+                        <iframe src="https://www.youtube.com/embed/L_BpiSsIBFM&list=RDEMEPsGcPqqzpBxP-gtt4OYKg&index=3" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                    <li>Geometry <br>
+                        <iframe src="https://www.youtube.com/embed/example2" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                    <li>Statistics <br>
+                        <iframe src="https://www.youtube.com/embed/example3" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="class-category">
+            <h3>Grade 10-12 Physical Science</h3>
+            <p>Advanced physics and chemistry topics including thermodynamics, and reactions.</p>
+            <button class="cta-button"  onclick="toggleTopics(this)">Expand</button>
+            <div class="topics hidden">
+                <ul>
+                    <li>Algebra <br>
+                        <iframe src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                    <li>Geometry <br>
+                        <iframe src="https://www.youtube.com/embed/example2" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                    <li>Statistics <br>
+                        <iframe src="https://www.youtube.com/embed/example3" frameborder="0" allowfullscreen></iframe>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
