@@ -26,6 +26,8 @@ header {
 
 .logo {
     font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight:600;
 }
 
 .hamburger-menu {
@@ -55,7 +57,7 @@ nav ul li a {
 }
 
 #hero {
-    background-color:gray;
+    background-color:#a9bec0;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -90,11 +92,12 @@ nav ul li a {
 
 .hero-image{
     background-size: cover;
-    background-image:url("hero-img2.png");
+    background-image:url("logo1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     height:80vh;    
     width:50vw;
+    margin-left:20px;
 }
 
 
@@ -282,7 +285,7 @@ button:hover {
     .hero-image{
         margin-top:20px;
         background-size: cover;
-        background-image:url("hero-img2.png");
+        background-image:url("logo1.jpg");
         background-repeat: no-repeat;
         background-position: center;
         height:45vh;    
