@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root{
-    --primary-color:purple;
+    --primary-color:#32cd32;
     --secondary-color:#f5f5f5;
     --accent-color:blue;
 }
@@ -230,6 +230,11 @@ button {
 
 button:hover {
     background-color: #218838;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 

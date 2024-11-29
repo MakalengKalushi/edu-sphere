@@ -1,0 +1,145 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#32cd32;
+    --secondary-color:#f2c464;
+    --accent-color:blue;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(246, 250, 250);
+    overflow-y: hidden;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color:var(--primary-color);
+    color: white;
+}
+
+
+.logo {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight:600;
+}
+
+.hamburger-menu {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+nav.hidden {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: var(--primary-color);
+    padding: 10px 0;
+}
+
+nav ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+h1{
+    text-align: center;
+    font-size:3rem;
+    margin-bottom:10px;
+}
+.container {
+    padding:20px;
+    margin: 0 auto;
+    height:minmax(100vh,auto);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.container p{
+    font-size:1.2rem;
+    margin-bottom:10px;
+    text-align:center;
+}
+
+.package-wrapper{
+    display:flex;
+    justify-content: space-around;
+    padding:20px;
+}
+.package {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    height:minmax(65vh, auto);
+    border-radius:8px;
+    padding:20px;
+    width: minmax(30%,auto)
+}
+
+.package h3 {
+    font-size: 2rem;
+    text-align:center;
+    border-bottom:1px solid #ccc;
+    padding:10px;
+}
+
+.package h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.package ul {
+    list-style-type: disc;
+    margin: 10px 0 20px 20px;
+}
+
+.package li {
+    margin-bottom: 8px;
+}
+
+
+.package ul li {
+    font-size: 1.2rem;
+    margin-bottom:10px;
+   
+}
+
+button{
+    text-align:center;
+    font-size:1.1rem;
+    height:30px;
+    width:280px;
+    font-weight:700;
+    margin:10px auto;
+    border-radius:8px;
+    border:1px solid #ccc;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    body{
+        overflow-y: scroll;
+    }
+
+    .package-wrapper {
+        display:flex;
+        flex-direction: column;
+    }
+}
