@@ -34,7 +34,7 @@ window.logout = function() {
   signOut(auth).then(() => {
     console.log("User signed out");
     alert("You have successfully logged out!");
-    window.location.href = "login.html"; // Redirect to login page
+    window.location.href = "login.html"; 
   }).catch((error) => {
     console.error("Logout error:", error);
   });
