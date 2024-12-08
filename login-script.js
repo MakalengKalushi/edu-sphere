@@ -60,7 +60,7 @@ errorElement.textContent = customErrorMessage;
         // User is signed in
         console.log("User is logged in:", user);
         statusElement.textContent = `Logged in as ${user.email}`;
-        window.location.href = "/dashboard.html";
+        window.location.href = "dashboard.html";
     } else {
         // User is signed out
         console.log("User is logged out");
