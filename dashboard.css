@@ -91,5 +91,29 @@
       padding: 15px;
       margin-top: 10px;
     }
+
+    .lessons{
+      padding: 15px;
+      margin-top: 10px;
+      background-color:white;
+      height:minmax(700px,auto);      
+      border:2px solid red;
+    }
+
+    .video-wrapper{
+      border:1px solid black;
+      padding:10px 10px;
+      margin:10px 10px;
+    }
+    .video-wrapper h3{
+      margin:10px 0;
+    }
+
+    .lessons-wrapper{
+      display:flex;
+      flex-direction:row;
+      overflow-x: scroll;
+     
+    }
   }
   
