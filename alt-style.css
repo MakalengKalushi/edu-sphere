@@ -93,7 +93,7 @@ nav ul li a {
 
 .hero-image{
     background-size: cover;
-    background-image:url("logo1.jpg");
+    background-image:url("edusphere.png");
     background-repeat: no-repeat;
     background-position: center;
     height:80vh;    
@@ -201,7 +201,7 @@ footer {
 .feature, .class-category, .lesson-schedule, .recorded-lessons, .material-category {
     margin-bottom: 20px;
     background-color: #f5f5dc;
-    padding: 15px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
