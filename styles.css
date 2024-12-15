@@ -237,6 +237,18 @@ button:hover {
     margin-bottom: 20px;
 }
 
+#features{
+    display:flex;
+    flex-direction: column;
+    background-color:purple;
+}
+
+
+
+
+
+
+
 
 /* Contact mobile */
 

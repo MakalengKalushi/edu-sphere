@@ -7,6 +7,7 @@
     --primary-color:#32cd32;
     --secondary-color:#f2c464;
     --accent-color:blue;
+    --alt-color:rgb(107, 177, 74);
 }
 body {
     font-family: Arial, sans-serif;
@@ -102,7 +103,7 @@ nav ul li a {
 
 #features {
     padding: 20px;
-    background-color: rgb(160, 226, 129);
+    background-color: var(--alt-color);
    
 }
 
@@ -321,6 +322,38 @@ button:hover {
     background-color: #218838;
 }
 
+.offer{
+    text-align:center;
+    font-size:1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:var(--alt-color);
+    color:white;
+    padding-top:15px;
+}
+
+
+/* --------Desktop--------- */
+
+@media (min-width: 980px) {
+    #features{
+       display:flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+  
+    }
+
+    .feature{
+        width:45%;
+        margin:10px;
+    }
+
+}
+
+
+
+
+
+
 
 /* Contact mobile */
 
@@ -423,6 +456,8 @@ button:hover {
 
 
 @media (max-width: 768px) {
+
+ s
 
 
     .about-container {
