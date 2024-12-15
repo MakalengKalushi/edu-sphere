@@ -97,20 +97,80 @@ nav ul li a {
     background-position: center;
     height:80vh;    
     width:50vw;
-    margin-left:20px;
 }
 
 
 #features {
     padding: 20px;
+    background-color: rgb(160, 226, 129);
    
 }
 
-.feature div{
-    height:70px;
-    width:100px;
+
+
+.recorded{
+    background-image:url(recorded.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:80px;
+    width:80px;
     margin:10px auto;
-    background-color:green;
+}
+
+.past{
+    background-image:url(past-papers.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:80px;
+    width:80px;
+    margin:10px auto;
+
+}
+
+
+.notes{
+    background-image:url(notes.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:80px;
+    width:80px;
+    margin:10px auto;
+
+}
+
+.quiz{
+    background-image:url(quiz.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:80px;
+    width:80px;
+    margin:10px auto;
+
+}
+
+.group{
+    background-image:url(group.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:80px;
+    width:80px;
+    margin:10px auto;
+
+}
+
+.live{
+    background-image:url(live.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:80px;
+    width:80px;
+    margin:10px auto;
 
 }
 

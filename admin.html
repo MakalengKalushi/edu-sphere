@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <a href="#">Home</a>
+        <a href="#">Upload Content</a>
+        <a href="#">Manage Pages</a>
+        <a href="#">Settings</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Welcome to the Admin Dashboard</h1>
+        <div class="upload-section">
+            <h2>Upload Content</h2>
+            <button onclick="openModal()">Upload New Content</button>
+        </div>
+    </div>
+
+    <div class="upload-modal" id="uploadModal">
+        <h3>Upload Content</h3>
+        <label for="file">Choose File</label>
+        <input type="file" id="file">
+
+        <label for="title">Title</label>
+        <input type="text" id="title" placeholder="Enter title">
+
+        <label for="description">Description</label>
+        <textarea id="description" rows="4" placeholder="Enter description"></textarea>
+
+        <div class="modal-footer">
+            <button class="cancel-btn" onclick="closeModal()">Cancel</button>
+            <button class="save-btn">Save</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('uploadModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('uploadModal').style.display = 'none';
+        }
+
+
+
+        document.querySelector('.save-btn').addEventListener('click', async () => {
+    const fileInput = document.getElementById('file');
+    const title = document.getElementById('title').value;
+    const description = document.getElementById('description').value;
+
+    if (!title || !description) {
+        alert("Title and description are required!");
+        return;
+    }
+
+    const data = {
+        title,
+        description,
+        fileName: fileInput.files[0]?.name || "No file selected",
+    };
+
+    try {
+        const response = await fetch('http://localhost:5000/api/uploads', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data),
+        });
+
+        if (response.ok) {
+            alert('Content saved successfully!');
+            fileInput.value = '';
+            document.getElementById('title').value = '';
+            document.getElementById('description').value = '';
+            closeModal();
+        } else {
+            alert('Failed to save content.');
+        }
+    } catch (error) {
+        console.error('Error saving data:', error);
+        alert('An error occurred.');
+    }
+});
+
+    </script>
+</body>
+</html>
