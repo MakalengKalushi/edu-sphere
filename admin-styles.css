@@ -112,3 +112,11 @@ body {
     background: #007bff;
     color: white;
 }
+
+
+@media screen and (max-width: 768px) {
+    .sidebar {  
+        
+    }
+    
+}
