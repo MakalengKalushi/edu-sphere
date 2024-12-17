@@ -377,7 +377,7 @@ button:hover {
 
     .hero-image{
         margin-top:20px;
-        background-size: cover;
+        background-size: contain;
         background-image:url("edusphere.png");
         background-repeat: no-repeat;
         background-position: center;
